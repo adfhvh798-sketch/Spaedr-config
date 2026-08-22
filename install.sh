@@ -2,16 +2,22 @@
 
 BASE_URL="https://raw.githubusercontent.com/adfhvh798-sketch/Spaedr-config/main"
 
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+ORANGE='\033[0;33m'
+RED='\033[0;31m'
+RESET='\033[0m'
+
 while true; do
     clear
 
     echo "=============================="
-    echo "      Spaedr config"
+    echo -e "      ${GREEN}Spaedr config${RESET}"
     echo "=============================="
     echo
-    echo "1) Configs"
-    echo "2) Proxies"
-    echo "3) Exit"
+    echo -e "${BLUE}1) Configs${RESET}"
+    echo -e "${ORANGE}2) Proxies${RESET}"
+    echo -e "${RED}3) Exit${RESET}"
     echo
     read -p "Enter number: " choice
 
@@ -19,7 +25,7 @@ while true; do
         1)
             clear
             echo "=============================="
-            echo "          Configs"
+            echo -e "          ${BLUE}Configs${RESET}"
             echo "=============================="
             echo
             curl -fsSL "$BASE_URL/configs.txt"
@@ -30,7 +36,7 @@ while true; do
         2)
             clear
             echo "=============================="
-            echo "           Proxies"
+            echo -e "          ${ORANGE}Proxies${RESET}"
             echo "=============================="
             echo
             curl -fsSL "$BASE_URL/proxy.txt"
