@@ -12,12 +12,19 @@ while true; do
     clear
 
     echo "=============================="
-    echo -e "      ${GREEN}Spaedr config${RESET}"
+    echo -e "      ${GREEN}Spaedr config 🚀${RESET}"
     echo "=============================="
     echo
     echo -e "${BLUE}1) Spaedr-config 🚀${RESET}"
     echo -e "${RED}2) Exit${RESET}"
     echo
+    echo "=============================="
+    echo "Telegram : https://t.me/spaidrcanfig"
+    echo "TikTok   : https://tiktok.com/@spaedrtiktok"
+    echo "YouTube  : https://www.youtube.com/@Spaedryoutube"
+    echo "=============================="
+    echo
+
     read -p "Enter number: " choice
 
     case $choice in
