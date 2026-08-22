@@ -15,25 +15,13 @@ while true; do
     echo -e "      ${GREEN}Spaedr config${RESET}"
     echo "=============================="
     echo
-    echo -e "${BLUE}1) Configs${RESET}"
-    echo -e "${BLUE}2) Spaedr-config 🚀${RESET}"
-    echo -e "${RED}3) Exit${RESET}"
+    echo -e "${BLUE}1) Spaedr-config 🚀${RESET}"
+    echo -e "${RED}2) Exit${RESET}"
     echo
     read -p "Enter number: " choice
 
     case $choice in
         1)
-            clear
-            echo "=============================="
-            echo -e "          ${BLUE}Configs${RESET}"
-            echo "=============================="
-            echo
-            curl -fsSL "$BASE_URL/configs.txt"
-            echo
-            read -p "Press Enter to return..."
-            ;;
-
-        2)
             clear
             echo "=============================="
             echo -e "       ${ORANGE}config Spaedr${RESET}"
@@ -44,7 +32,7 @@ while true; do
             read -p "Press Enter to return..."
             ;;
 
-        3)
+        2)
             exit 0
             ;;
 
