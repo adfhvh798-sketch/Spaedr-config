@@ -16,7 +16,7 @@ while true; do
     echo "=============================="
     echo
     echo -e "${BLUE}1) Configs${RESET}"
-    echo -e "${ORANGE}2) Proxies${RESET}"
+    echo -e "${BLUE}2) Spaedr-config 🚀${RESET}"
     echo -e "${RED}3) Exit${RESET}"
     echo
     read -p "Enter number: " choice
@@ -36,10 +36,10 @@ while true; do
         2)
             clear
             echo "=============================="
-            echo -e "          ${ORANGE}Proxies${RESET}"
+            echo -e "       ${ORANGE}config Spaedr${RESET}"
             echo "=============================="
             echo
-            curl -fsSL "$BASE_URL/proxy.txt"
+            curl -fsSL "$BASE_URL/configs.txt"
             echo
             read -p "Press Enter to return..."
             ;;
