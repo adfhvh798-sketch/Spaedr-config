@@ -9,33 +9,33 @@ while true; do
     echo "      Spaedr config"
     echo "=============================="
     echo
-    echo "۱) اه گیفناک"
-    echo "۲) یسکروپ"
-    echo "۳) جورخ"
+    echo "1) Configs"
+    echo "2) Proxies"
+    echo "3) Exit"
     echo
-    read -p " :دینک دراو ار هرامش" choice
+    read -p "Enter number: " choice
 
     case $choice in
         1)
             clear
             echo "=============================="
-            echo "          اه گیفناک"
+            echo "          Configs"
             echo "=============================="
             echo
             curl -fsSL "$BASE_URL/configs.txt"
             echo
-            read -p " ...دینزب ار Enter تشگرب یارب"
+            read -p "Press Enter to return..."
             ;;
 
         2)
             clear
             echo "=============================="
-            echo "           یسکروپ"
+            echo "           Proxies"
             echo "=============================="
             echo
             curl -fsSL "$BASE_URL/proxy.txt"
             echo
-            read -p " ...دینزب ار Enter تشگرب یارب"
+            read -p "Press Enter to return..."
             ;;
 
         3)
@@ -44,7 +44,7 @@ while true; do
 
         *)
             echo
-            echo " .تسا هابتشا هنیزگ"
+            echo "Invalid option."
             sleep 1
             ;;
     esac
